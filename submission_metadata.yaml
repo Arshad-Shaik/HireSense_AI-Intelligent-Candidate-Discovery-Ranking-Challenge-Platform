@@ -1,0 +1,61 @@
+team_name: "HireSense_AI"
+
+primary_contact:
+  name: "Shaik Arshad Wasib"
+  email: "arshadshaik641@gmail.com"
+  phone: "+91-7989668605"
+
+team_members:
+  - name: "Shaik Arshad Wasib"
+    email: "arshadshaik641@gmail.com"
+    role: "Fresher - seeking job opportunities in AI/ML, Software Development, and Data Science"
+
+github_repo: "https://github.com/Arshad-Shaik/HireSense_AI-Intelligent-Candidate-Discovery-Ranking-Challenge-Platform.git"
+
+sandbox_link: "https://huggingface.co/spaces/Arshad1620/hiresense-ai-space"
+
+
+reproduce_command: "cd ai-service && python rank.py"
+
+compute:
+  platform: "Windows 11 Local Machine"
+  cpu_cores: 4
+  ram_gb: 8
+  python_version: "3.14.0"
+  os: "Windows 11"
+  uses_gpu_for_inference: false
+  has_network_during_ranking: false
+  pre_computation_required: true
+  pre_computation_time_minutes: 240
+
+ai_tools_used:
+  - "Claude"
+  - "ChatGPT"
+
+ai_usage_summary: |
+  Used Claude & ChatGPT for architecture discussion, code review,
+  and debugging assistance. All engineering decisions,
+  design choices, and implementation were made by the
+  team. No candidate data was fed to any LLM.
+
+methodology_summary: |
+  HireSense_AI uses BAAI/bge-small-en-v1.5 embeddings
+  stored in ChromaDB for semantic retrieval of top 30K
+  candidates from a 100K pool. A dynamic domain filter
+  using JD vocabulary overlap and weighted domain scoring
+  eliminates non-technical profiles. Multi-signal ranking
+  combines semantic similarity (70%), skill alignment
+  (12%), experience (8%), profile quality (4%), behavior
+  (3%), and trust (3%). All 23 Redrob behavioral signals
+  are utilized including GitHub activity, skill assessment
+  scores, and recruiter engagement metrics. The system
+  naturally avoids honeypots through semantic and
+  vocabulary-based filtering without hardcoded rules.
+
+declarations:
+  read_submission_spec: true
+  code_is_original_work: true
+  no_collusion: true
+  honeypot_check_done: true
+  reproduction_tested: true
+

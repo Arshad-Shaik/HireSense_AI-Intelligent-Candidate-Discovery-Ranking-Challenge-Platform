@@ -1,0 +1,57 @@
+# hiresense-ai/.dockerignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Data (too large for Docker)
+data/
+*.jsonl
+*.jsonl.gz
+
+# ChromaDB (mounted at runtime)
+ai-service/chroma_db/
+
+# Node modules
+node_modules/
+.next/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Documentation
+docs/
+
+# Sandbox docs
+sandbox/README.md
+
+# Go build artifacts
+backend/hiresense-backend
+backend/*.exe
