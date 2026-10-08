@@ -18,7 +18,7 @@ system can be run on a small candidate sample."
 # `Live Demo`
 
 **HuggingFace Spaces:**
-https://huggingface.co/spaces/YOUR_USERNAME/hiresense-ai
+https://huggingface.co/spaces/Arshad1620/hiresense-ai-space
 
 ### Features
 
